@@ -1,0 +1,6 @@
+@media screen and (min-width: 1200px) {
+  .col-xl-13 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <!-- App -->
+    <div class="app">
+      <!-- header -->
+      <header class="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid main-header">
+            <div class="logo__app">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/logo/logo.png" alt="logoApp" />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 main-menu">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">demo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    >features
+                    <span class="title-label new">New</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    >shop
+                    <span class="title-label hot">Hot</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">lookbook</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">pages</a>
+                </li>
+              </ul>
+              <div class="header-control">
+                <a href="#" class="control-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-search"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </a>
+                <a href="#" class="control-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-user"
+                  >
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle></svg></a
+                ><a href="#" class="control-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-heart"
+                  >
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                    ></path>
+                  </svg>
+                  <span class="count">0</span> </a
+                ><a href="#" class="control-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-shopping-bag"
+                  >
+                    <path
+                      d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                    ></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  <span class="count">0</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- slide -->
+      <div class="site-content">
+        <div class="main-content">
+          <div
+            class="slideshow"
+            data-flickity='{  "contain": true ,"wrapAround": true,"groupCells": true  }'
+          >
+            <div class="item-slide col-12">
+              <picture>
+                <img src="./assets/slider/slider.jpg" alt="slider_img" />
+              </picture>
+              <div class="slide-content container">
+                <div class="content">
+                  <h5 class="subtitle">SCHNEID STUDIO</h5>
+                  <h2 class="title">
+                    <span>Kaskad Lamp Big</span>
+                    <span>Soft Mint</span>
+                  </h2>
+                  <a href="#" class="button">Shop Collection</a>
+                </div>
+              </div>
+            </div>
+            <div class="item-slide col-12">
+              <picture>
+                <img src="./assets/slider/slider.jpg" alt="slider_img" />
+              </picture>
+              <div class="slide-content container">
+                <div class="content">
+                  <h5 class="subtitle">SCHNEID STUDIO</h5>
+                  <h2 class="title">
+                    <span>Kaskad Lamp Big</span>
+                    <span>Soft Mint</span>
+                  </h2>
+                  <a href="#" class="button">Shop Collection</a>
+                </div>
+              </div>
+            </div>
+            <div class="item-slide col-12">
+              <picture>
+                <img src="./assets/slider/slider.jpg" alt="slider_img" />
+              </picture>
+              <div class="slide-content container">
+                <div class="content">
+                  <h5 class="subtitle">SCHNEID STUDIO</h5>
+                  <h2 class="title">
+                    <span>Kaskad Lamp Big</span>
+                    <span>Soft Mint</span>
+                  </h2>
+                  <a href="#" class="button">Shop Collection</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-container">
+            <div class="row-category">
+              <div class="category-head row d-flex justify-content-center">
+                <div class="category-des col-lg-6 col-md-6 col-sm-12 col-xl-4">
+                  <h2>Collections</h2>
+                  <span
+                    >Donec venenatis vulputate lorem roin sapien ipsum, porta a
+                    auctor quis, euismod</span
+                  >
+                </div>
+              </div>
+              <div class="category-section row">
+                <div
+                  class="category-item col-xl-4 col-lg-4 col-md-6 col-sm-12 d-flex"
+                >
+                  <div class="category-inner">
+                    <div class="category-thumb">
+                      <div class="thumb-element">
+                        <img
+                          src="./assets/img/collection_item_1.jpg"
+                          alt="collections1"
+                        />
+                      </div>
+                      <div class="content">
+                        <a href="#" class="category-name"> Chair </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="category-item col-xl-4 col-lg-4 col-md-6 col-sm-12 lamp"
+                >
+                  <div class="category-inner">
+                    <div class="category-thumb">
+                      <div class="thumb-element">
+                        <img
+                          src="./assets/img/collection_item_2.jpg"
+                          alt="collections1"
+                        />
+                      </div>
+                      <div class="content">
+                        <a href="#" class="category-name"> Lamp </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="category-item col-xl-4 col-lg-4 col-md-6 col-sm-12 accessories"
+                >
+                  <div class="category-inner">
+                    <div class="category-thumb">
+                      <div class="thumb-element">
+                        <img
+                          src="./assets/img/collection_item_3.jpg"
+                          alt="collections1"
+                        />
+                      </div>
+                      <div class="content">
+                        <a href="#" class="category-name"> Accessories </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="unsen-product container">
+            <div class="head">
+              <h3 class="title">Featured Products</h3>
+              <p class="des">
+                Donec venenatis vilputate lorem roin sapien ipsum, porta a
+                auctor quis, euismod
+              </p>
+            </div>
+            <div class="product-slide">
+              <div
+                class="product-list"
+                data-flickity='{  "contain": true ,"groupCells": true  }'
+              >
+                <div
+                  class="product-item col-sm-6 col-md-4 col-lg-3 col-xl-13 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="sale">
+                        <span class="new">New</span>
+                      </div>
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Adilette-Slide-Sandal_02.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price">$300.00</span>
+                      <div class="group-color">
+                        <ul class="list-color">
+                          <li><a href="#" class="blue"></a></li>
+                          <li><a href="#" class="red"></a></li>
+                          <li><a href="#" class="yellow"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-xl-13 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="sale">
+                        <span class="quality">-20%</span>
+                      </div>
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Adilette-Slide-Sandal_04.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price price-new"
+                        >$300.00 <span class="price-sale">$800.00</span></span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-xl-13 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Adilette-Slide-Sandal_color_03.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price">$300.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-xl-13 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="sale">
+                        <span class="trending">trending</span>
+                      </div>
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Bella-Tie-Shoulder-Cami_01.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price">$300.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-xl-13 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Bella-Tie-Shoulder-Cami_03.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price">$300.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-sm-6 col-md-4 col-lg-3 col-xl-13 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="sale">
+                        <span class="new">New</span>
+                      </div>
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Adilette-Slide-Sandal_02.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price">$300.00</span>
+                      <div class="group-color">
+                        <ul class="list-color">
+                          <li><a href="#" class="blue"></a></li>
+                          <li><a href="#" class="red"></a></li>
+                          <li><a href="#" class="yellow"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-xl-13 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="sale">
+                        <span class="quality">-20%</span>
+                      </div>
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Adilette-Slide-Sandal_04.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price price-new"
+                        >$300.00 <span class="price-sale">$800.00</span></span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-xl-13 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Adilette-Slide-Sandal_color_03.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price">$300.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-xl-13 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="sale">
+                        <span class="trending">trending</span>
+                      </div>
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Bella-Tie-Shoulder-Cami_01.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price">$300.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-xl-13 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Bella-Tie-Shoulder-Cami_03.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price">$300.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-sm-6 col-md-4 col-lg-3 col-xl-13 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="sale">
+                        <span class="new">New</span>
+                      </div>
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Bella-Tie-Shoulder-Cami_03.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price">$300.00</span>
+                      <div class="group-color">
+                        <ul class="list-color">
+                          <li><a href="#" class="blue"></a></li>
+                          <li><a href="#" class="red"></a></li>
+                          <li><a href="#" class="yellow"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-xl-13 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="sale">
+                        <span class="quality">-20%</span>
+                      </div>
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Adilette-Slide-Sandal_04.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price price-new"
+                        >$300.00 <span class="price-sale">$800.00</span></span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-xl-13 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Adilette-Slide-Sandal_color_03.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price">$300.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-xl-13 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="sale">
+                        <span class="trending">trending</span>
+                      </div>
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Bella-Tie-Shoulder-Cami_01.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price">$300.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-item col-xl-13 col-lg-3 col-md-4 col-sm-6 col-xs-6"
+                >
+                  <div class="product-inner">
+                    <div class="product-thumnail">
+                      <div class="favorite">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            favorite
+                          </span>
+                        </a>
+                      </div>
+                      <a href="#" class="thumb-img">
+                        <img
+                          src="./assets/images/Bella-Tie-Shoulder-Cami_03.jpg"
+                          alt="#"
+                        />
+                      </a>
+                    </div>
+                    <div class="product-info">
+                      <h4 class="product-title">
+                        <a href="#" class="text">Band-collar Popover Tunic</a>
+                      </h4>
+                      <span class="price">$300.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
+  </body>
+</html>
