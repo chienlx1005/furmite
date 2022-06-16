@@ -843,6 +843,9 @@ ol {
 .footer-content .title-item {
   margin: 10px 0;
 }
+.footer-content .title-item:hover a {
+  color: #000;
+}
 .footer-content .follow-me ul {
   display: flex;
 }
