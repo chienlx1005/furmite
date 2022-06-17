@@ -380,7 +380,8 @@ img {
 .product-item .product-inner {
   display: inline-block;
   vertical-align: top;
-  max-width: 100%;
+  max-width: 92%;
+  margin: 0 auto;
 }
 .product-item .thumb-img img {
   transition: 0.35s;
@@ -391,8 +392,6 @@ img {
 .product-item .product-thumnail {
   position: relative;
   overflow: hidden;
-  max-width: 92%;
-  margin: 0 auto;
 }
 .product-thumnail .sale {
   position: absolute;
@@ -644,7 +643,8 @@ img {
   margin-top: 84px;
 }
 .sell-content .sell-inner {
-  max-width: 100%;
+  max-width: 92%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -653,9 +653,7 @@ img {
   max-height: 615px;
 }
 .sell-inner .sell-thumnail {
-  max-width: 92%;
   overflow: hidden;
-  margin: 0 auto;
   position: relative;
   height: 100%;
 }
