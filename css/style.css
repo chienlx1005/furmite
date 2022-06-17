@@ -73,10 +73,7 @@ html::-webkit-scrollbar {
 .navbar-nav .nav-item {
   padding: 25px 0;
 }
-.main-header {
-  /* padding-right: 0;
-  padding-left: 0; */
-}
+
 .nav-item .title-label {
   position: absolute;
   top: -3px;
@@ -173,6 +170,7 @@ html::-webkit-scrollbar {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: var(--white);
+  font-weight: var(--font-weight-meidum);
 }
 .item-slide .title {
   font-size: 70px;
@@ -188,6 +186,7 @@ html::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   font-family: var(--font-poppin);
+  font-weight: var(--font-weight-regular);
   width: 182px;
   text-align: center;
   font-size: 14px;
@@ -274,6 +273,11 @@ img {
   color: #000;
   font-weight: var(--font-weight-regular);
 }
+.category-head .category-des h2 {
+  font-family: var(--font-poppin);
+  font-size: 34px;
+  font-weight: var(--font-weight-regular);
+}
 .category-des > span {
   font-size: 14px;
   font-weight: var(--font-weight-regular);
@@ -307,7 +311,7 @@ img {
   height: 100%;
   object-fit: cover;
 }
-.category-inner .content {
+.category-inner .category-name {
   position: absolute;
   width: 222px;
   height: 105px;
@@ -318,21 +322,19 @@ img {
   margin: auto;
   background-color: #fff;
   text-align: center;
-}
-.category-inner .content:hover {
-  background-color: #000;
-  cursor: pointer;
-}
-.category-inner .content:hover a {
-  color: #fff;
-}
-
-.category-inner .content .category-name {
   line-height: 105px;
   text-decoration: none;
   color: #000;
   font-family: var(--font-poppin);
+  font-size: 22px;
+  font-weight: var(--font-weight-regular);
 }
+.category-inner .category-name:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
 /* product slide */
 .unsen-product {
   margin-bottom: 40px;
@@ -354,12 +356,16 @@ img {
   color: #000;
   line-height: 32px;
   margin-bottom: 20px;
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-poppin);
 }
 .unsen-product .head .des {
   font-size: 14px;
   color: #868686;
   margin: 0 auto;
   max-width: 500px;
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-poppin);
 }
 .unsen-product .product-slide {
   padding-bottom: 60px;
@@ -447,6 +453,7 @@ img {
   color: var(--red);
   font-weight: var(--font-weight-regular);
   background-color: var(--white);
+  font-family: var(--font-poppin);
   border-radius: 12px;
   text-align: center;
 }
@@ -460,6 +467,7 @@ img {
   color: var(--color-trending);
   background-color: var(--white);
   font-weight: var(--font-weight-regular);
+  font-family: var(--font-poppin);
   border-radius: 12px;
   padding: 0 5px;
   text-align: center;
@@ -498,6 +506,9 @@ img {
 .product-item .price-sale {
   color: #868686;
   text-decoration: line-through;
+  font-family: var(--font-poppin);
+  font-weight: var(--font-weight-regular);
+  font-size: 12px;
 }
 .product-item .group-color {
   display: block;
@@ -691,6 +702,7 @@ img {
 .sell-container .title span {
   font-size: 14px;
   font-weight: var(--font-weight-regular);
+  font-family: var(--font-poppin);
   color: #868686;
 }
 /* happy */
@@ -817,8 +829,7 @@ img {
   width: 100%;
   max-width: 1440px;
 }
-.footer-content .footer-row {
-}
+
 .footer-content ul li {
   list-style: none;
   text-align: left;
@@ -843,7 +854,7 @@ ol {
 .footer-content .title-item {
   margin: 10px 0;
 }
-.footer-content .title-item:hover a {
+.footer-content .title-item a:hover {
   color: #000;
 }
 .footer-content .follow-me ul {
