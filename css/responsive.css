@@ -83,6 +83,9 @@
   }
 }
 @media screen and (min-width: 425px) and (max-width: 986px) {
+  .header {
+    height: 60px;
+  }
   .navbar-collapse {
     background-color: rgba(250, 235, 215, 1);
     text-align: center;
@@ -94,7 +97,7 @@
     justify-content: center;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) and (max-width: 600px) {
   .col-xs-6 {
     flex: 0 0 auto;
     width: 50%;
@@ -102,5 +105,13 @@
   .col-xs-12 {
     flex: 0 0 auto;
     width: 100%;
+  }
+  .col-xs-2 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+  .col-xs-4 {
+    flex: 0 0 auto;
+    width: 33%;
   }
 }
