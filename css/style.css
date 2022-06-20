@@ -904,6 +904,7 @@ ol {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  align-items: center;
 }
 .footer-copyright .container {
   width: 100%;

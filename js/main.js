@@ -22,17 +22,11 @@ const app = {
   modalHide: function () {
     window.addEventListener("resize", function () {
       if (window.innerWidth >= 1000) {
-        //   console.log(">>check hide");
-        $(".modal-content.modal-content-active").classList.remove(
-          "modal-content-active"
-        );
-        menu.style.display = "flex";
-      }
-      if (this.window.scroll > 60) {
-        header.classList.add("header-active");
-      }
-      if (this.window.screenTop === 0) {
-        $(".header.header-active").classList.remove("header-active");
+        const modalOpen = $(".modal-content.modal-content-active");
+        if (modalOpen) {
+          modalOpen.classList.toggle("modal-content-active");
+          menu.style.display = "flex";
+        }
       }
       this.window.innerWidth <= 990
         ? ((footerMenu.style.display = "flex"),
