@@ -362,7 +362,7 @@ img {
 .unsen-product.container {
   width: 100%;
   max-width: 1770px;
-  padding-top: 95px;
+  padding-top: 82px;
 }
 .unsen-product .head {
   font-weight: var(--font-weight-regular);
@@ -401,7 +401,7 @@ img {
 .product-inner {
   display: inline-block;
   vertical-align: top;
-
+  position: relative;
   margin: 0 auto;
   text-align: center;
 }
@@ -421,16 +421,14 @@ img {
   left: 20px;
   z-index: 2;
 }
-.product-thumnail .favorite {
+.product-inner .favorite {
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
+  top: 8px;
+  right: 19px;
+
   display: flex;
   justify-content: flex-end;
-  padding: 22px;
+
   text-align: center;
 
   z-index: 1;
@@ -500,9 +498,8 @@ img {
   text-align: center;
 }
 .product-inner .product-info {
-  height: 86px;
   position: relative;
-  padding: 15px 0;
+  padding: 25px 0;
 }
 .product-inner .product-title {
   font-size: 14px;
