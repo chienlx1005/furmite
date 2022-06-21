@@ -25,10 +25,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-html::-webkit-scrollbar {
+/* html::-webkit-scrollbar {
   width: 0 !important;
   display: none;
-}
+} */
 /* header */
 .app {
   position: relative;
