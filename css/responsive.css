@@ -42,6 +42,12 @@
   .header .icon-menu {
     display: flex;
   }
+  .footer-copyright {
+    padding-bottom: 35px;
+  }
+  .head-control-footer {
+    display: flex;
+  }
   .category-section .category-item {
     margin: 10px 0;
   }

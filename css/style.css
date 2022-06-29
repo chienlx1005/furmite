@@ -999,7 +999,7 @@ ol {
   align-items: center;
 }
 .modal-content .icon-close {
-  font-size: 50px;
+  font-size: 30px;
   transition: 0.5s;
 }
 .modal-content .icon-close:hover {
