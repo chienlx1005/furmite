@@ -30,6 +30,13 @@
   display: none;
 } */
 /* header */
+
+/* custorm slide */
+.flickity-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* app */
 .app {
   position: relative;
 }
@@ -51,6 +58,8 @@
 }
 .header .icon-menu {
   font-size: 30px;
+  display: none;
+  margin: 10px;
 }
 .header .icon-menu:hover {
   cursor: pointer;
