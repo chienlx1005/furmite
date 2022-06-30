@@ -22,6 +22,10 @@
     flex: 0 0 auto;
     width: 33%;
   }
+  .col-xs-10 {
+    flex: 0 0 auto;
+    width: 80%;
+  }
 }
 
 /* responsive */
@@ -63,6 +67,9 @@
   }
   .happy-content .container {
     padding: 20px 0;
+  }
+  .slideshow {
+    margin-bottom: 0;
   }
 }
 /* tablet-small */
